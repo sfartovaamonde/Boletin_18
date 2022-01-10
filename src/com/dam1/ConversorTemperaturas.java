@@ -16,14 +16,14 @@ public class ConversorTemperaturas {
             // farenheit = (centigrados * 1.8) + 32
         gradosFarenheit = (gradosCentigrados * c) + b;
 
-        JOptionPane.showMessageDialog(null, " CONVERSA = " + gradosFarenheit);
+        JOptionPane.showMessageDialog(null, " Grados Farenheit = " + gradosFarenheit + " Fº");
 
     }
     public void centígradosAReamur() throws TemperaturaErradaExcepcion{
         float gradosCentigrados, gradosReamur;
-        final float c = (float) 2;
-        final float b = (float) 5;
-        final float a = (float) 80;
+        final float x = (float) 2;
+        final float d = (float) 5;
+        final float z = (float) 80;
 
 
         gradosCentigrados = (float) Integer.parseInt(JOptionPane.showInputDialog(" grados centigrados"));
@@ -32,9 +32,9 @@ public class ConversorTemperaturas {
             throw new TemperaturaErradaExcepcion(" NON SE PODE CONVERSAR");
         else
             // reaumur = (2*centigrados)/5
-            gradosReamur = (gradosCentigrados * c) + b;
+            gradosReamur = (gradosCentigrados * x)/d;
 
-        JOptionPane.showMessageDialog(null, " CONVERSA = " + gradosReamur);
+        JOptionPane.showMessageDialog(null, " Grados Reaumur = " + gradosReamur + " grados ");
 
     }
 }

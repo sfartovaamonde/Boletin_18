@@ -8,9 +8,16 @@ public class Main {
         ConversorTemperaturas obx = new ConversorTemperaturas();
         try {
             obx.centigradosAFharenheit();
-            obx.centígradosAReamur();
+
         } catch ( TemperaturaErradaExcepcion ex) {
             JOptionPane.showMessageDialog(null, "ERROR " + ex.toString());
+        }
+
+        try {
+            obx.centígradosAReamur();;
+
+        }catch ( TemperaturaErradaExcepcion ex) {
+            JOptionPane.showMessageDialog(null, " ERROR " +ex.toString());
         }
 
     }
